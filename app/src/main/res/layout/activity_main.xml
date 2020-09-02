@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/avengers"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-86dp">
+
+        <ProgressBar
+            android:id="@+id/ironProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_IMG_ironMan"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/main_BTN_handLaser"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#650101"
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="#19CF05"
+            android:tag="Iron man" />
+
+        <Button
+            android:id="@+id/main_BTN_handLaser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_BTN_rockets"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@id/main_IMG_ironMan"
+            android:layout_weight="1"
+            android:backgroundTint="#E80C0C"
+            android:tag="handLaser"
+            android:text="Hand Laser" />
+
+        <Button
+            android:id="@+id/main_BTN_rockets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@id/main_IMG_ironMan"
+            android:layout_weight="1"
+            android:backgroundTint="#E80C0C"
+            android:tag="rockets"
+            android:text="Rockets" />
+
+        <Button
+            android:id="@+id/main_BTN_starkPunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_BTN_rockets"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/main_IMG_ironMan"
+            android:layout_weight="1"
+            android:backgroundTint="#E80C0C"
+            android:tag="starkPunch"
+            android:text="punch" />
+
+        <ProgressBar
+            android:id="@+id/thorProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_IMG_thor"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toStartOf="@+id/main_BTN_HammerAttack"
+            android:max="100"
+            android:progress="100"
+            android:progressBackgroundTint="#650101"
+            android:progressDrawable="@drawable/custom_progress"
+            android:progressTint="#19CF05"
+            android:tag="Thor" />
+
+        <Button
+            android:id="@+id/main_BTN_ThunderAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_BTN_HammerAttack"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/main_IMG_thor"
+            android:layout_weight="1"
+            android:backgroundTint="#E80C0C"
+            android:tag="Thunder"
+            android:text="Thunder" />
+
+        <Button
+            android:id="@+id/main_BTN_HammerAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/main_IMG_thor"
+            android:layout_weight="1"
+            android:backgroundTint="#E80C0C"
+            android:tag="Hammer"
+            android:text="Hammer" />
+
+        <Button
+            android:id="@+id/main_BTN_thorPunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_BTN_HammerAttack"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/main_IMG_thor"
+            android:layout_weight="1"
+            android:backgroundTint="#E80C0C"
+            android:tag="thorPunch"
+            android:text="Punch" />
+
+        <ImageView
+            android:id="@+id/main_IMG_ironMan"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ironman1"></ImageView>
+
+        <ImageView
+            android:id="@+id/main_IMG_thor"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/thor"></ImageView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
