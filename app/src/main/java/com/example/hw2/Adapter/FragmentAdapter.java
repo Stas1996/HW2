@@ -38,9 +38,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             case 0:
                 return "map";
             case 1:
-                return "top 10" +
-                        "" +
-                        "";
+                return "top 10";
         }
         return "";
 
