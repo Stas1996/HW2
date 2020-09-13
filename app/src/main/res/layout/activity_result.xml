@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/result_LAY_mainLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rocket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="GAME OVER"
+            android:textColor="#0027EC"
+            android:textSize="75sp"
+            android:textStyle="bold"
+            android:background="#FFFFFF"
+
+            />
+
+        <TextView
+            android:id="@+id/result_LBL_winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:background="#D3FFFFFF"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/Result_BTN_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toLeftOf="@id/Result_BTN_again"
+            android:backgroundTint="@color/starkProgressColor"
+            android:tag="exit"
+            android:text="exit"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/Result_BTN_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/starkProgressColor"
+            android:tag="again"
+            android:text="again"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Result_BTN_top10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toRightOf="@id/Result_BTN_again"
+            android:backgroundTint="@color/starkProgressColor"
+            android:tag="top10"
+            android:text="top10"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
